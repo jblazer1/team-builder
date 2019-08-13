@@ -3,7 +3,6 @@
   width: 800px;
   margin: 0 auto;
   border: solid 2px black;
-  font-size: 30px;
 }
 
 .some-form {
@@ -22,6 +21,10 @@
   margin-top: 15px;
   margin-bottom: 30px;
   font-size: 30px;
+}
+
+.some-label {
+  font-size: 25px;
 }
 
 .some-button {

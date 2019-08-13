@@ -23,7 +23,9 @@ const TeamForm = props => {
 
   return (
     <form className="some-form">
-      <label htmlFor="name">Team Member NAME</label>
+      <label className="some-label" htmlFor="name">
+        Enter Team Member NAME
+      </label>
       <input
         className="some-input"
         type="text"
@@ -32,7 +34,9 @@ const TeamForm = props => {
         value={member.name}
         onChange={changeHandler}
       />
-      <label htmlFor="email">Team Member EMAIL</label>
+      <label className="some-label" htmlFor="email">
+        Enter Team Member EMAIL
+      </label>
       <input
         className="some-input"
         type="email"
@@ -41,7 +45,9 @@ const TeamForm = props => {
         value={member.email}
         onChange={changeHandler}
       />
-      <label htmlFor="role">Team Member ROLE</label>
+      <label className="some-label" htmlFor="role">
+        Enter Team Member ROLE
+      </label>
       <input
         className="some-input"
         type="text"
