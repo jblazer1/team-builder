@@ -1,21 +1,24 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
+
+import TeamForm from "./components/TeamForm.js";
+import Member from "./components/Member.js";
 
 import foobar from "./data";
 
 function App() {
-  const [team, setTeam] = useState(foobar);
+  const [teams, setTeams] = useState(foobar);
 
   const addNewMember = member => {
-    setTeam([...team, team]);
+    setTeams([...teams, member]);
   };
 
   return (
     <div className="App">
-      <header className="App-header">TEAM MEMBERS</header>
+      <h1>Add a new MEMBER to the team here</h1>
       <TeamForm addNewMember={addNewMember} />
-      <Member memberList={team} />
+      <h2>TEAM MEMBERS</h2>
+      <Member memberList={teams} />
     </div>
   );
 }
